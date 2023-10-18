@@ -46,12 +46,12 @@ function loginUserMessage_V3(username) {
 // console.log(loginUserMessage); // [Function: loginUserMessage]
 // console.log(loginUserMessage()); // sam just logged in
 
-// console.log(loginUserMessage_V2()); // undefined just logged in (it uses undefied in variable in case of no arguemnt)
+// console.log(loginUserMessage_V2()); // undefined just logged in (it uses undefined in variable in case of no arguemnt)
 
 // console.log(loginUserMessage_V3());
 
 function calculateCartPrice(...num1) {
-  // spread operator bunddled evrything in sort of a package, which is array in this case
+  // spread operator bundled everything in sort of a package, which is array in this case
   return num1;
 }
 console.log(calculateCartPrice(200, 400, 500, 2000)); // [ 200, 400, 500, 2000 ]
@@ -60,7 +60,7 @@ function calculateCartPrice_V2(val1, val2, ...num1) {
   return num1;
 }
 console.log(calculateCartPrice_V2(200, 400, 500, 2000)); // [ 500, 2000 ]
-// here, only [500, 2000] are bundeled by ...num1 & val1=200, val2=400
+// here, only [500, 2000] are bundled by ...num1 & val1=200, val2=400
 
 const user = {
   username: "smiley",
