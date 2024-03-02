@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>DOM learning</title>
+    <style>
+      .bg-black {
+        background-color: #212121;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div>
+      <h1 id="title" class="heading">
+        DOM learning
+        <span style="display: none">test text</span>
+      </h1>
+      <h2>Lorem ipsum dolor sit.</h2>
+      <h2>Lorem ipsum dolor sit.</h2>
+      <h2>Lorem ipsum dolor sit.</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <input type="password" name="" id="" />
+
+      <ul>
+        <li class="list-item">one</li>
+        <li class="list-item">two</li>
+        <li class="list-item">three</li>
+        <li class="list-item">four</li>
+      </ul>
+    </div>
+    <script>
+      // console.log(document.getElementById("title3").getAttribute("id"));
+      // console.log(document.getElementById("title3").setAttribute("class", "todo"));
+
+      const title = document.getElementById("title");
+      //"style" is used for styling
+      title.style.backgroundColor = "#6565ad";
+      title.style.padding = "17px";
+      title.style.padding = "17px";
+
+      // all text, including hidden
+      // console.log(title.textContent); // DOM learning
+      // test text
+
+      // entire html and inside the elements including comments
+      // console.log(title.innerHTML); //DOM learning
+      //<span style="display: none">test text</span>
+
+      // only visible text excluding hidden
+      // console.log(title.innerText); // DOM learning
+
+      //console.log(document.getElementsByClassName("heading"));
+
+      /*
+CSS selectors can be used in queryselectors
+class and id are selected with "#" & "."
+queryselector only gives the first selector
+queryselectorall gives all the elements
+
+querselectorall gives nodelist on which forEach loop is applied
+
+getElement gives us HTMLCollection which can be converted to array via   """""Array.from(myList)"""""
+
+*/
+
+      // document.querySelector("h2")
+      // document.querySelector("#title")
+      // document.querySelector(".heading")
+      // <input type=​"password" name id>​
+      // document.querySelector('li:first-child')
+    </script>
+  </body>
+</html>

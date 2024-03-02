@@ -11,6 +11,7 @@
       <li>Javascript</li>
     </ul>
   </body>
+
   <script>
     function addLanguage(langName) {
       const li = document.createElement("li");
@@ -37,7 +38,7 @@
 
     //edit
     const firstLang = document.querySelector("li:first-child");
-    firstLang.outerHTML = "<li>TypeScript</li>";
+    firstLang.outerHTML = '<li style="color: blue;">TypeScript</li>';
 
     //remove
     const lastLang = document.querySelector("li:last-child");
